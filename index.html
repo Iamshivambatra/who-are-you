@@ -2,15 +2,19 @@
 
 <html>
 
-	<head>		<title>giphy searcher</title>
+	<head>		<title>who are you?</title>
 
 		<style>
-
+             @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
 			/* Basic CSS comment */
+
+*{
+	font-family: 'Noto Serif', serif;
+}
 
 			body {
 
-				background: grey;
+				background: cornflowerblue;
 
 				color: white;
 
@@ -26,10 +30,14 @@
 
 			h1 {
 
-				font-size: 80px;
+				font-size: 70px;
 
-				color: #333	;
+				color: white;
 
+			}
+
+			img {
+				height: 300px;
 			}
 
 		</style>
@@ -43,10 +51,10 @@
 			var username = prompt("Hello, who are you?");
 
 			if(username==="kunal mittal") {
-                                var url = "https://media.tenor.com/7Te3KCv9jsEAAAAC/aap-chutiya-hai-aap-chutiya-hain.gif";
-				document.write("<h1>Hello " + username + " you are a such lund!</h1>");
-				document.write(url);
-
+                var url = "https://media.makeameme.org/created/tu-chutiya-hai-d5uu5a.jpg";
+				document.write("<h1>" + username + " tu ek number ka chutiya insaan hai</h1>");
+				document.write("<img src=\""+ url +"\">")
+                
 			}
 
 			else {
